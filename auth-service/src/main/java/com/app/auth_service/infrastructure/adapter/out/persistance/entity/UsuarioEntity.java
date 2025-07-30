@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.persistance.entity;
+package com.app.auth_service.infrastructure.adapter.out.persistance.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,5 +26,9 @@ public class UsuarioEntity {
     @Getter
     @Setter
     private String password;
+
+    @Getter
+    @Setter
+    private String rol;
 
 }

@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.persistance.adapter.DTOS;
+package com.app.auth_service.infrastructure.adapter.out.DTOS;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -12,5 +12,6 @@ public class UserResponse {
     private Long id;
     private Integer legajo;
     private String nombre;
+    private String rol;
 
 }

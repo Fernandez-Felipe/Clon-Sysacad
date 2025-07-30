@@ -1,13 +1,13 @@
 package com.app.auth_service.domain.port.in;
 
 import com.app.auth_service.domain.model.Usuario;
-import com.app.auth_service.infrastructure.persistance.adapter.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
 
 public interface UsuarioCaseUse {
 
     UserResponse CrearUsuario(Usuario user);
-    UserResponse EncontrarUsuarioPorLaId(Long id);
-    UserResponse EncontrarUsuarioPorElLegajo(Integer legajo);
+    Usuario EncontrarUsuarioPorLaId(Long id);
+    Usuario EncontrarUsuarioPorElLegajo(Integer legajo);
     UserResponse EliminarUsuarioPorLaId(Long id);
     UserResponse EliminarUsuarioPorElLegajo(Integer legajo);
     UserResponse ActualizarUsuarioPorLaId(Long id, Usuario user);

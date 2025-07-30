@@ -1,7 +1,8 @@
-package com.app.auth_service.infrastructure.persistance.repository;
+package com.app.auth_service.infrastructure.adapter.out.persistance.repository;
 
-import com.app.auth_service.infrastructure.persistance.entity.UsuarioEntity;
+import com.app.auth_service.infrastructure.adapter.out.persistance.entity.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,12 +15,14 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Long> {
     void deleteByLegajo(Integer legajo);
 
     @Transactional
-    @Query("UPDATE usuarios u SET u.nombre = :nombre, u.password = :password WHERE id = :id")
+    @Modifying
+    @Query("UPDATE UsuarioEntity u SET u.nombre = :nombre, u.password = :password WHERE u.id = :id")
     void updateUsuarioById(@Param("nombre")String nombre, @Param("password") String password,
                                               @Param("id") Long id);
 
     @Transactional
-    @Query("UPDATE usuarios u SET u.nombre = :nombre, u.password = :password WHERE legajo = :legajo")
+    @Modifying
+    @Query("UPDATE UsuarioEntity u SET u.nombre = :nombre, u.password = :password WHERE legajo = :legajo")
     void updateUsuarioByLegajo(@Param("nombre")String nombre, @Param("password") String password,
                                               @Param("legajo") Integer legajo);
 }

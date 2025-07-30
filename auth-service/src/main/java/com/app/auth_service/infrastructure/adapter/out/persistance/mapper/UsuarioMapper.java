@@ -1,8 +1,8 @@
-package com.app.auth_service.infrastructure.persistance.mapper;
+package com.app.auth_service.infrastructure.adapter.out.persistance.mapper;
 
 import com.app.auth_service.domain.model.Usuario;
-import com.app.auth_service.infrastructure.persistance.adapter.DTOS.UserResponse;
-import com.app.auth_service.infrastructure.persistance.entity.UsuarioEntity;
+import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.out.persistance.entity.UsuarioEntity;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -14,6 +14,7 @@ public class UsuarioMapper {
                 .nombre(entity.getNombre())
                 .legajo(entity.getLegajo())
                 .password(entity.getPassword())
+                .rol(entity.getRol())
                 .build();
     }
 
@@ -22,6 +23,7 @@ public class UsuarioMapper {
                 .nombre(user.getNombre())
                 .legajo(user.getLegajo())
                 .password(user.getPassword())
+                .rol(user.getRol())
                 .build();
     }
 
@@ -31,6 +33,7 @@ public class UsuarioMapper {
                 .id(user.getId())
                 .nombre(user.getNombre())
                 .legajo(user.getLegajo())
+                .rol(user.getRol())
                 .build();
 
     }

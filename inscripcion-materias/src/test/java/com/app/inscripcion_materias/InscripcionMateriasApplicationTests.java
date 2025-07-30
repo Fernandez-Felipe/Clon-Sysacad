@@ -1,10 +1,10 @@
-package com.app.auth_service;
+package com.app.inscripcion_materias;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AuthServiceApplicationTests {
+class InscripcionMateriasApplicationTests {
 
 	@Test
 	void contextLoads() {

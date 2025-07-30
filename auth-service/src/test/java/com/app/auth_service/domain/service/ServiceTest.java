@@ -1,8 +1,9 @@
 package com.app.auth_service.domain.service;
 
+import com.app.auth_service.application.service.UsuarioService;
 import com.app.auth_service.domain.model.Usuario;
 import com.app.auth_service.domain.port.out.UsuarioRepositoryPort;
-import com.app.auth_service.infrastructure.persistance.adapter.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -58,15 +59,16 @@ public class ServiceTest {
                 .password("123456789")
                 .build();
 
-        UserResponse ResultadoEsperado = UserResponse.builder()
+        Usuario ResultadoEsperado = Usuario.builder()
                 .id(1L)
                 .nombre("felipe")
+                .password("hash1234")
                 .legajo(28055)
                 .build();
 
         when(usuarioRepositoryPort.findById(1L)).thenReturn(ResultadoEsperado);
 
-        UserResponse UsuarioExtraido = usuarioService.EncontrarUsuarioPorLaId(1L);
+        Usuario UsuarioExtraido = usuarioService.EncontrarUsuarioPorLaId(1L);
 
         assertEquals(user.getLegajo(),UsuarioExtraido.getLegajo());
         verify(usuarioRepositoryPort).findById(1L);
@@ -82,15 +84,16 @@ public class ServiceTest {
                 .password("123456789")
                 .build();
 
-        UserResponse ResultadoEsperado = UserResponse.builder()
+        Usuario ResultadoEsperado = Usuario.builder()
                 .id(1L)
-                .legajo(28055)
                 .nombre("felipe")
+                .password("hash1234")
+                .legajo(28055)
                 .build();
 
         when(usuarioRepositoryPort.findByLegajo(28055)).thenReturn(ResultadoEsperado);
 
-        UserResponse UsuarioExtraido = usuarioService.EncontrarUsuarioPorElLegajo(28055);
+        Usuario UsuarioExtraido = usuarioService.EncontrarUsuarioPorElLegajo(28055);
 
         assertEquals(ResultadoEsperado.getLegajo(),UsuarioExtraido.getLegajo());
         verify(usuarioRepositoryPort).findByLegajo(28055);
@@ -170,7 +173,7 @@ public class ServiceTest {
 
     @Test
     public void ActualizarUnUsuarioSegunSuLegajo(){
-        
+
         Usuario UsuarioActualizado = Usuario.builder()
                 .id(1L)
                 .nombre("carlos")

@@ -1,10 +1,23 @@
 services:
-  mysql:
-    image: 'mysql:latest'
+  Sysacad:
+    image: 'mysql:8.0'
+    container_name: 'db-sysacad'
     environment:
-      - 'MYSQL_DATABASE=mydatabase'
-      - 'MYSQL_PASSWORD=secret'
-      - 'MYSQL_ROOT_PASSWORD=verysecret'
-      - 'MYSQL_USER=myuser'
+      - 'MYSQL_DATABASE=alumnos-sysacad'
+      - 'MYSQL_PASSWORD=123456789'
+      - 'MYSQL_ROOT_PASSWORD=123456789'
+      - 'MYSQL_USER=testuser'
     ports:
-      - '3306'
+      - "3306:3306"
+
+  sysacad-auth-service:
+    build: .
+    container_name: auth-service_sysacad
+    depends_on:
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/alumnos-sysacad
+      SPRING_DATASOURCE_USERNAME: testuser
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8080:8080"

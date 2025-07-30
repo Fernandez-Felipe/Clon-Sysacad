@@ -1,9 +1,9 @@
-package com.app.auth_service.domain.service;
+package com.app.auth_service.application.service;
 
 import com.app.auth_service.domain.model.Usuario;
 import com.app.auth_service.domain.port.in.UsuarioCaseUse;
 import com.app.auth_service.domain.port.out.UsuarioRepositoryPort;
-import com.app.auth_service.infrastructure.persistance.adapter.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,12 +19,12 @@ public class UsuarioService implements UsuarioCaseUse {
     }
 
     @Override
-    public UserResponse EncontrarUsuarioPorLaId(Long id) {
+    public Usuario EncontrarUsuarioPorLaId(Long id) {
         return usuarioRepositoryPort.findById(id);
     }
 
     @Override
-    public UserResponse EncontrarUsuarioPorElLegajo(Integer legajo) {
+    public Usuario EncontrarUsuarioPorElLegajo(Integer legajo) {
         return usuarioRepositoryPort.findByLegajo(legajo);
     }
 
