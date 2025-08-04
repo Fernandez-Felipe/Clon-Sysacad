@@ -3,7 +3,7 @@ package com.app.auth_service.domain.service;
 import com.app.auth_service.application.service.UsuarioService;
 import com.app.auth_service.domain.model.Usuario;
 import com.app.auth_service.domain.port.out.UsuarioRepositoryPort;
-import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

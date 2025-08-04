@@ -2,10 +2,10 @@ package com.app.auth_service.infrastructure.adapter;
 
 import com.app.auth_service.domain.model.Usuario;
 import com.app.auth_service.domain.port.out.UsuarioRepositoryPort;
-import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
-import com.app.auth_service.infrastructure.adapter.out.persistance.entity.UsuarioEntity;
-import com.app.auth_service.infrastructure.adapter.out.persistance.mapper.UsuarioMapper;
-import com.app.auth_service.infrastructure.adapter.out.persistance.repository.UsuarioRepository;
+import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.out.persistance.entity.UsuarioEntity;
+import com.app.auth_service.infrastructure.out.persistance.mapper.UsuarioMapper;
+import com.app.auth_service.infrastructure.out.persistance.repository.UsuarioRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -3,7 +3,7 @@ package com.app.auth_service.application.service;
 import com.app.auth_service.domain.model.Usuario;
 import com.app.auth_service.domain.port.in.UsuarioCaseUse;
 import com.app.auth_service.domain.port.out.UsuarioRepositoryPort;
-import com.app.auth_service.infrastructure.adapter.out.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
