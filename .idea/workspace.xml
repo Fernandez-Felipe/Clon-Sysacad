@@ -5,45 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14eb4fe7-b73a-4cc9-8c52-6dbcf9ab8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/PublicKeyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/KeyLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/KeyPairConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/application/service/InscripcionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/model/Inscripcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/in/InscriptionCaseUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/out/InscriptionRepositoryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/adapter/InscriptionAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Mapper/InscriptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Repository/InscriptionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sysacad.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/port/in/JwtServiceCaseUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/port/in/JwtServiceCaseUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/port/out/JwtServicePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/port/out/JwtServicePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/application/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/domain/port/in/UsuarioCaseUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/domain/port/in/UsuarioCaseUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/domain/port/out/UsuarioRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/domain/port/out/UsuarioRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/Security/Adapter/JwtServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/JwtServiceAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/Security/Dtos/UserLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/Dtos/UserLoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/Security/Dtos/UserLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/Dtos/UserLoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/UsuarioRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/UsuarioRepositoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/in/Rest/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/out/DTOS/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/persistance/DTOS/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/out/DTOS/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/persistance/DTOS/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/out/persistance/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/persistance/entity/UsuarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/out/persistance/mapper/UsuarioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/persistance/mapper/UsuarioMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/adapter/out/persistance/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/persistance/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/test/java/com/app/auth_service/domain/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/test/java/com/app/auth_service/domain/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inscripcion-materias/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inscripcion-materias/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/InscripcionMateriasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/InscripcionMateriasApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/application/service/InscripcionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/application/service/InscripcionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/model/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/model/Inscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/in/InscriptionCaseUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/port/in/InscriptionCaseUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/out/InscriptionRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/port/out/InscriptionRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/adapter/InscriptionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/adapter/InscriptionAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Mapper/InscriptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Mapper/InscriptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Repository/InscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Repository/InscriptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +65,8 @@
     &quot;Application.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Docker.auth-service/compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven.auth-service [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -88,6 +78,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ANDRES\Desktop\Sysacad" />
       <recent name="C:\Users\ANDRES\Desktop\Sysacad\auth-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +90,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.AuthServiceApplication">
+  <component name="RunManager" selected="Docker.compose.yaml.sysacad-auth-service: Compose Deployment">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.app.auth_service.AuthServiceApplication" />
       <module name="auth-service" />
@@ -145,8 +136,36 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="compose.yaml.Sysacad: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="Sysacad" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.sysacad-auth-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="sysacad-auth-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.compose.yaml.sysacad-auth-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.Sysacad: Compose Deployment" />
         <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" />
         <item itemvalue="Docker.auth-service/compose.yaml.Sysacad: Compose Deployment" />
