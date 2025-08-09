@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14eb4fe7-b73a-4cc9-8c52-6dbcf9ab8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/materias-alumnos/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/InscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/Dtos/InscriptionRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/PublicKeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/PublicKeyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +24,8 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,6 +53,7 @@
     &quot;Maven.auth-service [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,

@@ -8,14 +8,20 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.List;
 
 
-
+@Slf4j
 @Component
 @AllArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -36,14 +42,31 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                         .build()
                         .parseClaimsJws(token)
                         .getBody();
-            } catch (JwtException e) {
-                response.setStatus(HttpStatus.UNAUTHORIZED.value());
+
+                String name = claims.getSubject();
+                Integer legajo = claims.get("legajo", Integer.class);
+                String role = claims.get("role", String.class);
+
+                List<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority("ROLE_" + role));
+
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(name,null, authorities);
+
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+
+            } catch (Exception ex) {
+
+                request.setAttribute("Exception", ex);
+                request.getRequestDispatcher("/error/AuthError").forward(request,response);
+
                 return;
             }
         } else {
-            response.setStatus(HttpStatus.UNAUTHORIZED.value());
+            request.setAttribute("Header", authHeader);
+            request.getRequestDispatcher("/error/jwt").forward(request,response);
             return;
         }
+
+
 
         filterChain.doFilter(request, response);
 

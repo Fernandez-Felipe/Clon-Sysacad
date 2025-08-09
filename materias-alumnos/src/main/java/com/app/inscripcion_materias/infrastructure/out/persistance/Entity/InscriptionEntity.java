@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class InscriptionEntity {
     @EmbeddedId
-    InscriptionIds id;
+    private InscriptionIds id;
 
-    String estado;
+    private String estado;
 
 }
