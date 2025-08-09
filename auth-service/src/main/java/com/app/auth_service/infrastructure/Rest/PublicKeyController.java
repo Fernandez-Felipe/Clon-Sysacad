@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/.well-known")
+@RequestMapping("/public-key")
 @AllArgsConstructor
 public class PublicKeyController {
 

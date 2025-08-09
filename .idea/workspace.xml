@@ -5,36 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14eb4fe7-b73a-4cc9-8c52-6dbcf9ab8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materias-alumnos/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/InscripcionMateriasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/InscripcionMateriasApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/application/service/InscripcionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/application/service/InscripcionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/model/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/model/Inscripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/in/InscriptionCaseUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/port/in/InscriptionCaseUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/domain/port/out/InscriptionRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/port/out/InscriptionRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/adapter/InscriptionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/adapter/InscriptionAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Mapper/InscriptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Mapper/InscriptionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Repository/InscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Repository/InscriptionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscripcion-materias/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/PublicKeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/Rest/PublicKeyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/app/auth_service/infrastructure/out/Security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/test/java/com/app/inscripcion_materias/InscripcionMateriasApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +49,8 @@
     &quot;Docker.auth-service/compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.inscripciones-materias: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven.auth-service [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -93,7 +75,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.compose.yaml.sysacad-auth-service: Compose Deployment">
+  <component name="RunManager" selected="Docker.compose.yaml.inscripciones-materias: Compose Deployment">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.app.auth_service.AuthServiceApplication" />
       <module name="auth-service" />
@@ -113,38 +95,38 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.Sysacad: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="Sysacad" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="sysacad-auth-service" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="compose.yaml.Sysacad: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
               <option value="Sysacad" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.auth-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="auth-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.inscripciones-materias: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="inscripciones-materias" />
             </list>
           </option>
           <option name="sourceFilePath" value="compose.yaml" />
@@ -167,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.compose.yaml.sysacad-auth-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.inscripciones-materias: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.auth-service: Compose Deployment" />
         <item itemvalue="Docker.compose.yaml.Sysacad: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.sysacad-auth-service: Compose Deployment" />
         <item itemvalue="Application.AuthServiceApplication" />
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.Sysacad: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

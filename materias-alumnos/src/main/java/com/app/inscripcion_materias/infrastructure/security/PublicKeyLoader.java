@@ -1,5 +1,9 @@
 package com.app.inscripcion_materias.infrastructure.security;
 
+import com.nimbusds.jose.JOSEException;
+import com.nimbusds.jose.jwk.ECKey;
+import com.nimbusds.jose.jwk.JWK;
+import com.nimbusds.jose.jwk.JWKSet;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
@@ -10,36 +14,35 @@ import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
+import java.text.ParseException;
 import java.util.Base64;
 
 @Component
 public class PublicKeyLoader {
 
-    private static final String PUBLIC_KEY_URL = "http://auth-service:8080/public-key";
+    private static final String PUBLIC_KEY_URL = "http://auth-service:8080/public-key/jwks.json";
 
     @Getter
     private PublicKey publicKey;
 
     @PostConstruct
-    public void LoadPublicKey() throws NoSuchAlgorithmException, InvalidKeySpecException {
+    public void LoadPublicKey() throws ParseException, JOSEException {
 
         RestTemplate restTemplate = new RestTemplate();
-        String pem = restTemplate.getForObject(PUBLIC_KEY_URL, String.class);
+        String jwksJson = restTemplate.getForObject(PUBLIC_KEY_URL, String.class);
 
-        // 2. Eliminar encabezado y pie del PEM
-        String pemClean = pem
-                .replace("-----BEGIN PUBLIC KEY-----", "")
-                .replace("-----END PUBLIC KEY-----", "")
-                .replaceAll("\\s+", "");
+        System.out.println("JWKS recibido: " + jwksJson);
 
-        // 3. Decodificar base64
-        byte[] keyBytes = Base64.getDecoder().decode(pemClean);
+        JWKSet jwkSet = JWKSet.parse(jwksJson);
 
-        // 4. Crear PublicKey desde los bytes
-        X509EncodedKeySpec spec = new X509EncodedKeySpec(keyBytes);
-        KeyFactory kf = KeyFactory.getInstance("EC"); // ES256 usa algoritmo EC
-        this.publicKey = kf.generatePublic(spec);
+        JWK jwk = jwkSet.getKeys().getFirst();
 
+        if (!(jwk instanceof ECKey ecKey)) {
+            throw new IllegalArgumentException("Expected ECKey but got: " + jwk.getClass());
+        }
+
+        this.publicKey = ecKey.toECPublicKey();
+        System.out.println("Clave pública cargada exitosamente");
     }
 
 }
