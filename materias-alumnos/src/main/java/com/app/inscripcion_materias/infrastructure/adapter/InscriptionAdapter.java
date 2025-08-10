@@ -46,15 +46,22 @@ public class InscriptionAdapter implements InscriptionRepositoryPort {
     }
 
     @Override
-    public Inscripcion DeleteInscription(Inscripcion ids) {
+    public Inscripcion DeleteInscription(InscriptionIds ids) {
 
-        InscriptionIds IDS = InscriptionIds.builder().materiaid(ids.getMateriaid()).legajo(ids.getLegajo()).build();
+        InscriptionEntity inscription = inscriptionRepository.findById(ids).orElseThrow();
 
-        InscriptionEntity inscription = inscriptionRepository.findById(IDS).orElseThrow();
-
-        inscriptionRepository.deleteById(IDS);
+        inscriptionRepository.deleteById(ids);
 
         return mapper.mapToInscripcion(inscription);
+
+    }
+
+    @Override
+    public Inscripcion getOneInscription(InscriptionIds ids) {
+
+        InscriptionEntity entity = inscriptionRepository.findById(ids).orElseThrow();
+
+        return mapper.mapToInscripcion(entity);
 
     }
 }

@@ -3,6 +3,7 @@ package com.app.inscripcion_materias.application.service;
 import com.app.inscripcion_materias.domain.model.Inscripcion;
 import com.app.inscripcion_materias.domain.port.in.InscriptionCaseUse;
 import com.app.inscripcion_materias.domain.port.out.InscriptionRepositoryPort;
+import com.app.inscripcion_materias.infrastructure.out.persistance.Entity.InscriptionIds;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,12 @@ public class InscripcionService implements InscriptionCaseUse {
     }
 
     @Override
-    public Inscripcion EleminarInscripcion(Inscripcion ids) {
+    public Inscripcion EleminarInscripcion(InscriptionIds ids) {
         return port.DeleteInscription(ids);
+    }
+
+    @Override
+    public Inscripcion ObtenerUnaInscripcion(InscriptionIds ids) {
+        return port.getOneInscription(ids);
     }
 }

@@ -1,5 +1,6 @@
 package com.app.inscripcion_materias.infrastructure.security;
 
+import com.app.inscripcion_materias.domain.model.Usuario;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
@@ -47,9 +48,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 Integer legajo = claims.get("legajo", Integer.class);
                 String role = claims.get("role", String.class);
 
+                Usuario user = Usuario.builder().name(name).legajo(legajo).role(role).build();
+
                 List<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority("ROLE_" + role));
 
-                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(name,null, authorities);
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(user,null, authorities);
 
                 SecurityContextHolder.getContext().setAuthentication(authentication);
 

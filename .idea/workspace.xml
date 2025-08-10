@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14eb4fe7-b73a-4cc9-8c52-6dbcf9ab8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/InscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/Dtos/InscriptionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/domain/model/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/Rest/InscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/Dtos/InscriptionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/Dtos/InscriptionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/out/persistance/Entity/InscriptionIds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/java/com/app/inscripcion_materias/infrastructure/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/materias-alumnos/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
