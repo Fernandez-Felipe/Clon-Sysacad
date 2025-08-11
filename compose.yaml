@@ -21,9 +21,9 @@ services:
     ports:
       - "8080:8080"
 
-  inscripciones-materias:
+  inscriptions-service:
     build: ./materias-alumnos
-    container_name: inscripciones-materias
+    container_name: inscriptions-service
     depends_on:
       - Sysacad
     environment:
