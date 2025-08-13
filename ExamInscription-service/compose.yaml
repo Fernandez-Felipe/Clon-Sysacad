@@ -1,0 +1,9 @@
+services:
+  sysacad-exam-inscription-service:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/inscripciones-examenes
+      SPRING_DATASOURCE_USERNAME: testuser
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8082:8082"

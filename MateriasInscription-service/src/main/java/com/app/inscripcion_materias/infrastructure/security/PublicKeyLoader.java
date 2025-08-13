@@ -1,4 +1,4 @@
-package com.app.exam_service.infrastructure.security.jwt;
+package com.app.inscripcion_materias.infrastructure.security;
 
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.ECKey;
@@ -9,13 +9,18 @@ import lombok.Getter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.X509EncodedKeySpec;
 import java.text.ParseException;
+import java.util.Base64;
 
 @Component
 public class PublicKeyLoader {
 
-    private static final String PUBLIC_KEY_URL = "http://auth-service:8080/public-key/jwks.json";
+    private static final String PUBLIC_KEY_URL = "http://sysacad-auth-service:8080/public-key/jwks.json";
 
     @Getter
     private PublicKey publicKey;

@@ -3,12 +3,13 @@ services:
     image: 'mysql:8.0'
     container_name: 'db-sysacad'
     environment:
-      - 'MYSQL_DATABASE=alumnos-sysacad'
       - 'MYSQL_PASSWORD=123456789'
       - 'MYSQL_ROOT_PASSWORD=123456789'
       - 'MYSQL_USER=testuser'
     ports:
       - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   sysacad-auth-service:
     build: .
@@ -17,7 +18,31 @@ services:
       - Sysacad
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/alumnos-sysacad
-      SPRING_DATASOURCE_USERNAME: testuser
+      SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 123456789
     ports:
       - "8080:8080"
+
+  sysacad-materias-inscription-service:
+    image: materiasinscription-service-sysacad-materias-inscription-service
+    container_name: MateriasInscription-service
+    depends_on:
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/inscripciones-materias
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8081:8081"
+
+  sysacad-exams-inscription-service:
+    image: examinscription-service-sysacad-exam-inscription-service
+    container_name: ExamsInscription-service
+    depends_on:
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/inscripciones-examenes
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8082:8082"
