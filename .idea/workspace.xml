@@ -89,30 +89,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.AuthServiceApplication.executor": "Run",
-    "Docker.auth-service/compose.yaml.Sysacad: Compose Deployment.executor": "Run",
-    "Docker.auth-service/compose.yaml.sysacad-MateriasInscription-service: Compose Deployment.executor": "Run",
-    "Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment.executor": "Run",
-    "Docker.auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment.executor": "Run",
-    "Docker.auth-service/compose.yaml.sysacad-materias-inscription-service: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.Sysacad: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.auth-service: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.inscripciones-materias: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.inscriptions-service: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.sysacad-auth-service: Compose Deployment.executor": "Run",
-    "Maven.auth-service [clean,install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ANDRES/Desktop/Sysacad"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service/compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service/compose.yaml.sysacad-MateriasInscription-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service/compose.yaml.sysacad-materias-inscription-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.Sysacad: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.inscripciones-materias: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.inscriptions-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auth-service [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ANDRES/Desktop/Sysacad&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ANDRES\Desktop\Sysacad" />
@@ -127,7 +127,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment">
+  <component name="RunManager" selected="Docker.auth-service/compose.yaml.sysacad-materias-service: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -140,19 +140,6 @@
           <option name="services">
             <list>
               <option value="Sysacad" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-MateriasInscription-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="sysacad-MateriasInscription-service" />
             </list>
           </option>
           <option name="sourceFilePath" value="auth-service/compose.yaml" />
@@ -199,13 +186,26 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="auth-service/compose.yaml.sysacad-materias-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="sysacad-materias-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-materias-service: Compose Deployment" />
         <item itemvalue="Docker.auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment" />
         <item itemvalue="Docker.auth-service/compose.yaml.sysacad-materias-inscription-service: Compose Deployment" />
         <item itemvalue="Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" />
         <item itemvalue="Docker.auth-service/compose.yaml.Sysacad: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-MateriasInscription-service: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

@@ -46,3 +46,15 @@ services:
       SPRING_DATASOURCE_PASSWORD: 123456789
     ports:
       - "8082:8082"
+
+  sysacad-materias-service:
+    image: materias-service-sysacad-materias-service
+    container_name: materias-service
+    depends_on:
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/materias
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8083:8083"
