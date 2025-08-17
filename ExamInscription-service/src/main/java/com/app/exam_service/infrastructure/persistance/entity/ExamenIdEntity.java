@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class ExamenIdEntity {
 
-
     private Integer legajo;
     private Long materia_id;
     private Long id;

@@ -58,3 +58,15 @@ services:
       SPRING_DATASOURCE_PASSWORD: 123456789
     ports:
       - "8083:8083"
+
+  sysacad-carreras-service:
+    image: carreras-service-carreras-service
+    container_name: carreras-service
+    depends_on:
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/carreras
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8084:8084"
