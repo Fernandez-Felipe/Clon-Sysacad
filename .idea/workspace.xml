@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14eb4fe7-b73a-4cc9-8c52-6dbcf9ab8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/carreras-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/application/service/CarrerasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/domain/model/Carrera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/domain/port/in/CarrerasCaseUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/domain/port/out/CarrerasRepositoryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/adapter/CarreraRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/persistance/entity/CarreraEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/persistance/mapper/CarreraMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/persistance/repository/CarreraRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/rest/CarrerasController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/rest/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/security/jwt/PublicKeyLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamInscription-service/src/main/java/com/app/exam_service/infrastructure/persistance/entity/ExamenIdEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamInscription-service/src/main/java/com/app/exam_service/infrastructure/persistance/entity/ExamenIdEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamInscription-service/src/main/java/com/app/exam_service/infrastructure/security/jwt/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamInscription-service/src/main/java/com/app/exam_service/infrastructure/security/jwt/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MateriasInscription-service/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/MateriasInscription-service/src/main/java/com/app/inscripcion_materias/infrastructure/security/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/security/jwt/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/carreras-service/src/main/java/com/app/carreras_service/infrastructure/security/jwt/PublicKeyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materias-service/src/main/java/com/app/materias_service/infrastructure/security/jwt/PublicKeyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/materias-service/src/main/java/com/app/materias_service/infrastructure/security/jwt/PublicKeyLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +55,7 @@
     &quot;Docker.compose.yaml.auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.compose.yaml.inscripciones-materias: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.compose.yaml.inscriptions-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.materias-inscriptions-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.compose.yaml.sysacad-auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven.auth-service [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -89,85 +81,85 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.auth-service/compose.yaml.sysacad-carreras-service: Compose Deployment">
+  <component name="RunManager" selected="Docker.compose.yaml.materias-inscriptions-service: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.Sysacad: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="compose.yaml.auth-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="Sysacad" />
+              <option value="auth-service" />
             </list>
           </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+          <option name="sourceFilePath" value="compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="compose.yaml.carreras-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="sysacad-auth-service" />
+              <option value="carreras-service" />
             </list>
           </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+          <option name="sourceFilePath" value="compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-carreras-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="compose.yaml.exams-inscriptions-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="sysacad-carreras-service" />
+              <option value="exams-inscriptions-service" />
             </list>
           </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+          <option name="sourceFilePath" value="compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="compose.yaml.materias-inscriptions-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="sysacad-exams-inscription-service" />
+              <option value="materias-inscriptions-service" />
             </list>
           </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+          <option name="sourceFilePath" value="compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="auth-service/compose.yaml.sysacad-materias-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="compose.yaml.materias-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="sysacad-materias-service" />
+              <option value="materias-service" />
             </list>
           </option>
-          <option name="sourceFilePath" value="auth-service/compose.yaml" />
+          <option name="sourceFilePath" value="compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-carreras-service: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-auth-service: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.Sysacad: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-materias-service: Compose Deployment" />
-        <item itemvalue="Docker.auth-service/compose.yaml.sysacad-exams-inscription-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.materias-inscriptions-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.exams-inscriptions-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.materias-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.carreras-service: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml.auth-service: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

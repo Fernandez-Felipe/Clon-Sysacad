@@ -20,7 +20,7 @@ import java.util.Base64;
 @Component
 public class PublicKeyLoader {
 
-    private static final String PUBLIC_KEY_URL = "http://sysacad-auth-service:8080/public-key/jwks.json";
+    private static final String PUBLIC_KEY_URL = "http://auth-service:8080/public-key/jwks.json";
 
     @Getter
     private PublicKey publicKey;

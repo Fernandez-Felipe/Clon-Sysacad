@@ -21,10 +21,11 @@ services:
     ports:
       - "8080:8080"
 
-  inscriptions-service:
-    build: ./materias-alumnos
-    container_name: inscriptions-service
+  materias-inscriptions-service:
+    build: ./MateriasInscription-service
+    container_name: materias-inscriptions-service
     depends_on:
+      - auth-service
       - Sysacad
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/inscripciones-materias
@@ -32,3 +33,42 @@ services:
       SPRING_DATASOURCE_PASSWORD: 123456789
     ports:
       - "8081:8081"
+
+  exams-inscriptions-service:
+    build: ./ExamInscription-service
+    container_name: exams-inscriptions-service
+    depends_on:
+      - auth-service
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/inscripciones-examenes
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8082:8082"
+
+  materias-service:
+    build: ./materias-service
+    container_name: materias-service
+    depends_on:
+      - auth-service
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/materias
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8083:8083"
+
+  carreras-service:
+    build: ./carreras-service
+    container_name: carreras-service
+    depends_on:
+      - auth-service
+      - Sysacad
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://Sysacad:3306/carreras
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+    ports:
+      - "8084:8084"
