@@ -1,7 +1,7 @@
 package com.app.auth_service.domain.port.in;
 
 import com.app.auth_service.domain.model.Usuario;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserResponse;
 
 public interface UsuarioCaseUse {
 

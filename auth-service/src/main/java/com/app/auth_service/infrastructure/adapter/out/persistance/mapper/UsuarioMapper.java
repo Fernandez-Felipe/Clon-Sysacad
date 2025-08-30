@@ -1,8 +1,8 @@
-package com.app.auth_service.infrastructure.out.persistance.mapper;
+package com.app.auth_service.infrastructure.adapter.out.persistance.mapper;
 
 import com.app.auth_service.domain.model.Usuario;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
-import com.app.auth_service.infrastructure.out.persistance.entity.UsuarioEntity;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.out.persistance.entity.UsuarioEntity;
 import org.springframework.stereotype.Component;
 
 @Component

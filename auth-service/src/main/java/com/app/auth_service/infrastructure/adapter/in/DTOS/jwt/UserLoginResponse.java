@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.out.Security.Dtos;
+package com.app.auth_service.infrastructure.adapter.in.DTOS.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

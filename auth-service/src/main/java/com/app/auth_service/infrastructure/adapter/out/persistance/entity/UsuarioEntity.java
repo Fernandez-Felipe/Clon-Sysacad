@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.out.persistance.entity;
+package com.app.auth_service.infrastructure.adapter.out.persistance.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,6 +1,5 @@
-package com.app.auth_service.infrastructure.out.Security.config;
+package com.app.auth_service.infrastructure.config.Security.jwt;
 
-import com.app.auth_service.infrastructure.out.Security.KeyLoader;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

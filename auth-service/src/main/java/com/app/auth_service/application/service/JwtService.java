@@ -1,9 +1,9 @@
 package com.app.auth_service.application.service;
 
-import com.app.auth_service.application.port.in.JwtServiceCaseUse;
-import com.app.auth_service.application.port.out.JwtServicePort;
-import com.app.auth_service.infrastructure.out.Security.Dtos.UserLoginResponse;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserRequest;
+import com.app.auth_service.domain.port.in.JwtServiceCaseUse;
+import com.app.auth_service.domain.port.out.JwtServicePort;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.jwt.UserLoginResponse;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

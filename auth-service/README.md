@@ -27,6 +27,7 @@ Made with Hexagonal architecture, this program was thought for be friendly with 
  |-Adapter
  | |-in
  | | |-dtos
+ | | | |-jwt
  | | |-rest
  | |-out
  | | |-persistance
@@ -35,6 +36,7 @@ Made with Hexagonal architecture, this program was thought for be friendly with 
  | | | |-mapper
  |-Config
  | |-security
+ | | |-jwt
 
 
 //END POINTS

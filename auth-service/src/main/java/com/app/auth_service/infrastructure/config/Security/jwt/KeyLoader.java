@@ -1,6 +1,4 @@
-package com.app.auth_service.infrastructure.out.Security;
-
-import org.springframework.stereotype.Component;
+package com.app.auth_service.infrastructure.config.Security.jwt;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;

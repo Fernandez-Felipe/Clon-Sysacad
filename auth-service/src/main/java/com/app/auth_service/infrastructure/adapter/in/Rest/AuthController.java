@@ -1,12 +1,12 @@
-package com.app.auth_service.infrastructure.Rest;
+package com.app.auth_service.infrastructure.adapter.in.Rest;
 
 import com.app.auth_service.application.service.JwtService;
 import com.app.auth_service.application.service.UsuarioService;
 import com.app.auth_service.domain.model.Usuario;
-import com.app.auth_service.infrastructure.out.Security.Dtos.UserLoginRequest;
-import com.app.auth_service.infrastructure.out.Security.Dtos.UserLoginResponse;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserRequest;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserResponse;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.jwt.UserLoginRequest;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.jwt.UserLoginResponse;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserRequest;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;

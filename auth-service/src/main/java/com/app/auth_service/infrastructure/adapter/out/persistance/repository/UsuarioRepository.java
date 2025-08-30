@@ -1,6 +1,6 @@
-package com.app.auth_service.infrastructure.out.persistance.repository;
+package com.app.auth_service.infrastructure.adapter.out.persistance.repository;
 
-import com.app.auth_service.infrastructure.out.persistance.entity.UsuarioEntity;
+import com.app.auth_service.infrastructure.adapter.out.persistance.entity.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

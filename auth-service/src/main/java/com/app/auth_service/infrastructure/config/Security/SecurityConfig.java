@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.out.Security.config;
+package com.app.auth_service.infrastructure.config.Security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,14 +21,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable) // Desactivar CSRF para APIs
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/**").permitAll()
-                        .requestMatchers("/public-key/**").permitAll()// Permitís login y registro
-                        .anyRequest().authenticated()           // El resto requiere auth
+                        .requestMatchers("/public-key/**").permitAll()
+                        .anyRequest().authenticated()
                 )
-                .formLogin(AbstractHttpConfigurer::disable)  // 🔥 Desactivar página de login
-                .httpBasic(AbstractHttpConfigurer::disable); // Desactivar Basic Auth
+                .formLogin(AbstractHttpConfigurer::disable)
+                .httpBasic(AbstractHttpConfigurer::disable);
 
         return http.build();
     }

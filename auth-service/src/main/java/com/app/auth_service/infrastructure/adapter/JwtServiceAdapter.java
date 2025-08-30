@@ -1,13 +1,11 @@
 package com.app.auth_service.infrastructure.adapter;
 
-import com.app.auth_service.application.port.out.JwtServicePort;
-import com.app.auth_service.infrastructure.out.persistance.DTOS.UserRequest;
+import com.app.auth_service.domain.port.out.JwtServicePort;
+import com.app.auth_service.infrastructure.adapter.in.DTOS.UserRequest;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.security.Keys;
 import org.springframework.stereotype.Component;
 
-import javax.crypto.SecretKey;
 import java.security.KeyPair;
 import java.security.PrivateKey;
 import java.util.Date;

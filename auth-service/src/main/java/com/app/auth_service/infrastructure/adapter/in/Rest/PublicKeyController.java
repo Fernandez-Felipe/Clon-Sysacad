@@ -1,4 +1,4 @@
-package com.app.auth_service.infrastructure.Rest;
+package com.app.auth_service.infrastructure.adapter.in.Rest;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
