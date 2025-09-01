@@ -1,5 +1,0 @@
-CREATE DATABASE IF NOT EXISTS `alumnos-sysacad`;
-CREATE DATABASE IF NOT EXISTS `inscripciones-materias`;
-CREATE DATABASE IF NOT EXISTS `inscripciones-examenes`;
-CREATE DATABASE IF NOT EXISTS `materias`;
-CREATE DATABASE IF NOT EXISTS `carreras`;
